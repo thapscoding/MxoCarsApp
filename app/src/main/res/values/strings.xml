@@ -1,0 +1,181 @@
+<resources>
+    <!--App name-->
+    <string name="app_name">MxoCars</string>
+    <!--Vehicle finance application layout-->
+    <!-- https://developer.android.com/reference/java/util/Formatter   -->
+    <!--If you want to assign integer value then use "%1$d" and if String then use "%1$s" see https://www.javatpoint.com/java-string-format-->
+    <!--for more information about formatting strings https://developer.android.com/guide/topics/resources/string-resource.html#formatting-strings-->
+    <!--Vehicle finance header-->
+    <string name="vehicle_finance_application">Vehicle finance application</string>
+    <!--Email subject -->
+    <string name="vehicle_finance_application_for">Vehicle finance application for %s</string>
+    <!-- Personal information-->
+    <string name="surname">Surname %s</string>
+    <string name="name">Full names %s</string>
+    <string name="id_number">Id number %s</string>
+    <string name="cell_number">Cell number %s</string>
+    <string name="email">Email %s</string>
+    <string name="land_line">landline %s</string>
+    <string-array name="marital_status_array">
+        <item>Not Selected </item>
+        <item>Yes I am married</item>
+        <item>No I am not married</item>
+        <item>Divorced</item>
+        <item>Widowed</item>
+    </string-array>
+    <string-array name="graduate_status_array">
+        <item>Not Selected</item>
+        <item>Yes I am graduate</item>
+        <item>No I am not a graduate</item>
+    </string-array>
+    <string name="home_address">Home address %s</string>
+    <string name="postal_code">Postal code %s</string>
+    <string name="how_many_years_have_you_been_living_there">How many years have you been living there %s</string>
+    <string name="postal_address">Postal address %s</string>
+    <string-array name="homeowner_status_array">
+        <item>Not Selected</item>
+        <item>Yes I am a home owner</item>
+        <item>No I don\'t own property</item>
+    </string-array>
+    <!--Employment information-->
+    <string name="employers_name">Employers name %s</string>
+    <string name="employers_contact">Employers contact number %s</string>
+    <string name="employers_address">Employers address %s</string>
+    <string name="number_of_years_employed">Number of years employed %s</string>
+    <string name="occupation">Occupation %s</string>
+    <string name="industry">Industry %s</string>
+    <!--Bank details-->
+    <string name="bank">Bank %s</string>
+    <string name="bank_account_number">Bank account number %s</string>
+    <string name="bank_branch">Bank branch code %s</string>
+    <!--Spouse Information-->
+    <string name="spouse_name">Spouse name %s</string>
+    <string name="spouse_surname">Spouse surname %s</string>
+    <string name="spouse_id_number">Spouse id number %s</string>
+    <string name="spouse_contact_number">Spouse contact number %s</string>
+    <!--Relative not residing with you-->
+    <string name="relationship_of_relative">What is the relationship %s</string>
+    <string name="full_names_of_relative">Full names of relative %s</string>
+    <string name="surname_of_relative">Surname of relative %s</string>
+    <string name="phone_number_of_relative">Phone number of relative %s</string>
+    <string name="address_of_relative">Address of relative %s</string>
+    <!--Financial information-->
+    <string name="gross">Gross %s</string>
+    <string name="net_income">Net income %s</string>
+    <string name="do_you_have_additional_income">Do you have additional income %s</string>
+    <string name="source_of_additional_income">Source of additional income %s</string>
+    <!--Expenses-->
+    <string name="personal_loan">Personal loan %s</string>
+    <string name="insurance">Insurance %s</string>
+    <string name="bond_or_renting">Bond or renting payment %s</string>
+    <string name="municipality">Municipality %s</string>
+    <string name="credit_card">Credit card %s</string>
+    <string name="overdraft">Overdraft %s</string>
+    <string name="clothing_account">Clothing account %s</string>
+    <string name="phone_account">Phone account %s</string>
+    <string name="transport">Transport cost %s</string>
+    <string name="food_or_entertainment">Food or entertainment %s</string>
+    <string name="education_fees">Education fees %s</string>
+    <string name="maintenance">Maintenance %s</string>
+    <string name="household_expenses">Household expenses %s</string>
+    <string name="other_expenses">Other expenses %s</string>
+    <!--Send button-->
+    <string name="send">Send</string>
+    <!--Parameter strings for spinner questions in vehicle application form-->
+    <string name="are_you_married">Married %s</string>
+    <string name="are_you_a_graduate">Graduate %s</string>
+    <string name="are_you_a_home_owner">Home owner %s</string>
+    <!-- Spinner header text questions -->
+    <string name="please_tell_us_if_you_married">Please tell us if you married?</string>
+    <string name="please_tell_us_if_you_a_graduate">Please tell us if you a graduate ?</string>
+    <string name="do_you_own_property">Do you own property ?</string>
+    <!--Header for sections of the vehicle application -->
+    <string name="personal_information">Personal information</string>
+    <string name="employer_information">Employer Information</string>
+    <string name="spouse_information">Spouse information</string>
+    <string name="relative_information">Relative information</string>
+    <string name="how_are_you_related">How are you related</string>
+    <string name="personal_expenses">Personal Expenses</string>
+    <string name="financial_information">Financial information</string>
+    <string name="bank_details">Bank details</string>
+    <!--Vehicle categories layout-->
+    <string name="van">Van</string>
+    <string name="Sedan">Sedan</string>
+    <string name="minibus">Minibus</string>
+    <string name="vintage">Vintage</string>
+    <string name="suv">Suv or Family</string>
+    <string name="super_cars">Super car</string>
+    <string name="ev">Ev</string>
+    <!--List vehicle specification appearance layout-->
+    <string name="enquiries">Enquiries</string>
+    <string name="amount">R50000.00</string>
+    <string name="gearbox">Automatic</string>
+    <string name="kilometers">124455km</string>
+    <string name="date">2016</string>
+    <string name="model">3 series</string>
+    <string name="brand">Bmw</string>
+    <string name="car_image">Car Image</string>
+    <!--List appearance layout-->
+    <string name="volkswagen">Volkswagen</string>
+    <string name="polo_vivo">Polo Vivo</string>
+    <string name="suv_vehicle">Suv vehicle</string>
+    <string name="super_car_vehicle">Super car vehicle</string>
+    <string name="old_vintage_sedan_vehicle">Old vintage sedan vehicle</string>
+    <string name="mini_bus_vehicle">mini bus vehicle</string>
+    <string name="sedan_vehicle">Sedan vehicle</string>
+    <string name="pick_up_truck_vehicle">Pick up truck vehicle</string>
+    <string name="electrical_vehicle">Electrical vehicle</string>
+    <string name="hatch_vehicle">Hatch vehicle</string>
+    <string name="hatch">Hatch</string>
+    <string name="contact_information_button">Contact Information Button</string>
+    <!--Navigation drawer-->
+    <string name="navigation_drawer_open">Drawer Open</string>
+    <string name="navigation_drawer_close">Drawer Close</string>
+    <string name="apply_for_vehicle_finance">Apply for vehicle finance </string>
+    <string name="happy_customers">Happy customers </string>
+    <string name="information_about_us">Information about us </string>
+    <!--Welcome home screen-->
+    <string name="a_image_of_a_yellow_vantage_vehicle">A image of a yellow vantage vehicle</string>
+    <string name="vehicle_categories">Vehicle categories</string>
+    <string name="definition">MxoCars is here to assist customers to shop around for quality vehicles,financing and great support after purchases. MxoCars has over a 1000 vehicles of all categories. But the most important motto above all is you the customer. We want to ensure that you get a smooth customer experience.That is why all vehicles sold to customers go through 50 point checks to guarantee swiftness in driving and abide to the standards of our roads. Feel free to contact us and spread the word after you do.</string>
+    <string name="that_s_great">That\'s Great</string>
+    <string name="so_you_want_to_know_about_us">So you want to know about us !</string>
+    <string name="a_warm_welcome">A warm Welcome</string>
+    <!--Phone icon Action floating button-->
+    <string name="phone_icon">phone icon</string>
+    <!-- Information about us -->
+    <string name="mini_bus_image">Mini bus image</string>
+    <string name="we_want_to_hear_from_you">We want to hear from you</string>
+    <string name="communication_and_information">Communication and Information</string>
+    <string name="make_sure_you_are_connected_to_the_internet">Make sure you are connected to the internet.</string>
+    <string name="call_the_office">Call the office</string>
+    <string name="send_an_email">Send an Email</string>
+    <string name="contact_on_whatsapp">Contact on Whatsapp</string>
+    <string name="directions">Directions</string>
+    <!--view_pager.xml , customer_one.xml and customer_five.xml-->
+    <string name="picture_of_people">Pictures of people</string>
+    <string name="lets_hear_what_others_have_to_say">Lets hear what others have to say !</string>
+    <string name="slide_your_phone">slide your phone</string>
+    <string name="right_chevron">right chevron</string>
+    <string name="left_chevron">left chevron</string>
+    <!--list_vehicle_specification_appearance.xml-->
+    <string name="yellow_background">yellow background</string>
+    <string name="yellow_electrical_car">yellow electrical car</string>
+    <string name="volkswagen_mimic">Volkswagen</string>
+    <string name="polo_vivo_mimic">Polo Vivo</string>
+    <string name="year_mimic">Year</string>
+    <string name="mileage_mimic">Mileage</string>
+    <string name="transmission_mimic">Transmission</string>
+    <string name="vehicle_price_mimic">Vehicle Price</string>
+    <string name="fuel_mimic">Fuel</string>
+    <string name="enquire_mimic">enquire</string>
+    <!--list_appearance.xml  -->
+    <string name="white_ford_ranger_mimic">white ford ranger</string>
+    <string name="twenty_eighteen_mimic">2018</string>
+    <string name="four_hundred_km_mimic">400km</string>
+    <string name="manual_mimic">Manual</string>
+    <string name="price_mimic">R1000333</string>
+    <string name="fuel_type_mimic">Fuel Type</string>
+    <string name="mxo_cars">Mxo Cars</string>
+
+</resources>

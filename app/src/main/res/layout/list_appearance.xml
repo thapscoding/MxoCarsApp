@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/mimic_image_view"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_alignParentStart="true"
+        android:layout_margin="8dp"
+        android:contentDescription="@string/white_ford_ranger_mimic"
+        android:src="@drawable/van" />
+
+    <TextView
+        android:id="@+id/mimic_brand_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp"
+        android:layout_toEndOf="@id/mimic_image_view"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="@string/volkswagen" />
+
+    <TextView
+        android:id="@+id/mimic_model_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mimic_brand_name_text_view"
+        android:layout_marginStart="32dp"
+        android:layout_toEndOf="@id/mimic_image_view"
+        android:text="@string/polo_vivo" />
+
+    <TextView
+        android:id="@+id/mimic_year_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mimic_model_text_view"
+        android:layout_marginStart="32dp"
+        android:layout_toEndOf="@id/mimic_image_view"
+        android:text="@string/twenty_eighteen_mimic"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/mimic_mileage_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mimic_year_text_view"
+        android:layout_marginStart="32dp"
+        android:layout_toEndOf="@id/mimic_image_view"
+        android:text="@string/four_hundred_km_mimic"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/mimic_transmission_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mimic_mileage_text_view"
+        android:layout_marginStart="32dp"
+        android:layout_toEndOf="@id/mimic_image_view"
+        android:text="@string/manual_mimic"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/mimic_price_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mimic_transmission_text_view"
+        android:layout_marginStart="32dp"
+        android:layout_toEndOf="@id/mimic_image_view"
+        android:text="@string/price_mimic"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/mimic_fuel_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mimic_price_text_view"
+        android:layout_marginStart="32dp"
+        android:layout_toEndOf="@id/mimic_image_view"
+        android:text="@string/fuel_type_mimic"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

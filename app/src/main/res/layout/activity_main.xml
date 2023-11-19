@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/brand_yellow"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/business_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="@string/mxo_cars"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/logo_car_pic"
+        android:layout_width="172dp"
+        android:layout_height="172dp"
+        android:layout_below="@id/business_name"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/mini_bus_vehicle"
+        android:src="@drawable/old_minibus_vw" />
+
+
+</RelativeLayout>

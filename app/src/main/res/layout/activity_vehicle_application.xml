@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/brand_light_yellow"
+    android:orientation="vertical"
+    tools:context=".VehicleApplication">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:background="@color/brand_mustard"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="@string/vehicle_finance_application"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/personal_information"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/surname_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="surname"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/surname"
+            android:inputType="textCapSentences"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/full_names_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="name"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/name"
+            android:inputType="textCapSentences"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/id_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="identityNumber"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/id_number"
+            android:inputType="number"
+            android:maxLength="13"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/cell_phone_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="phone"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/cell_number"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/email_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="emailAddress"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/landline_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="phone"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/land_line"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/please_tell_us_if_you_married"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/marital_questions_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/spinner_back"
+            android:popupBackground="@drawable/shape"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/please_tell_us_if_you_a_graduate"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/graduate_questions_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/spinner_back"
+            android:popupBackground="@drawable/shape"
+            android:spinnerMode="dropdown" />
+
+        <EditText
+            android:id="@+id/home_address_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="postalAddress"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/home_address"
+            android:inputType="textPostalAddress"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/postal_code_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="postal code"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/postal_code"
+            android:inputType="number"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/years_residing_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="residential information"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/how_many_years_have_you_been_living_there"
+            android:inputType="number"
+            android:maxLength="2"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/postal_address_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="postalAddress"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/postal_address"
+            android:inputType="textPostalAddress"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/do_you_own_property"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/home_questions_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/spinner_back"
+            android:popupBackground="@drawable/shape"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/employer_information"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/employer_name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="name"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/employers_name"
+            android:inputType="textCapSentences"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/employers_contact_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="phone"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/employers_contact"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/employers_address_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="postalAddress"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/employers_address"
+            android:inputType="textPostalAddress"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/years_employed_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="EmploymentInformation"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/number_of_years_employed"
+            android:inputType="number"
+            android:maxLength="2"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/occupation_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="occupation"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/occupation"
+            android:inputType="textCapSentences"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/industry_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="industry"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/industry"
+            android:inputType="textCapSentences"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/bank_details"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/bank_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="bankInformation"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/bank"
+            android:inputType="textCapSentences"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/bank_account_number_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="bankAccountNumber"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/bank_account_number"
+            android:inputType="number"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/bank_branch_code_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="BankBranchCode"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/bank_branch"
+            android:inputType="number"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/spouse_information"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/spouse_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="name"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/spouse_name"
+            android:inputType="textCapSentences"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/spouse_surname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="surname"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/spouse_surname"
+            android:inputType="textCapSentences"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/spouse_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="identityNumber"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/spouse_id_number"
+            android:inputType="number"
+            android:maxLength="13"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/spouse_contact_number_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="phone"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/spouse_contact_number"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/relative_information"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/relationship_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="relativeInformation"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/how_are_you_related"
+            android:inputType="textCapSentences"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/relative_full_name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints=""
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/full_names_of_relative"
+            android:inputType="textCapSentences"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/surname_relative_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="surname"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/surname_of_relative"
+            android:inputType="textCapSentences"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/relative_phone_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="phone"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/phone_number_of_relative"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/relative_address_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="postalAddress"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/address_of_relative"
+            android:inputType="textPostalAddress"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/financial_information"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/gross_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="gross"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/gross"
+            android:inputType="numberDecimal"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/net_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="net"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/net_income"
+            android:inputType="numberDecimal"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/additional_income_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="additionalIncome"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/do_you_have_additional_income"
+            android:inputType="textCapSentences"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/source_of_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="sourceOfIncome"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/source_of_additional_income"
+            android:inputType="textCapSentences"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/personal_expenses"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/personal_loans_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="personalLoans"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/personal_loan"
+            android:inputType="numberDecimal"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/insurance_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="insurance"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/insurance"
+            android:inputType="numberDecimal"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/bond_rent_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="bond"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/bond_or_renting"
+            android:inputType="numberDecimal"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/municipality_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="municipality"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/municipality"
+            android:inputType="numberDecimal"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/credit_card_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="creditCard"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/credit_card"
+            android:inputType="numberDecimal"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/overdraft_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="overdraft"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/overdraft"
+            android:inputType="numberDecimal"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/clothing_account_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="clothing"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/clothing_account"
+            android:inputType="numberDecimal"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/phone_bill_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="phoneBill"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/phone_account"
+            android:inputType="numberDecimal"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp"
+            tools:ignore="TextFields" />
+
+        <EditText
+            android:id="@+id/transport_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="transport"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/transport"
+            android:inputType="numberDecimal"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/food_or_entertainment_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="foodAndEntertainment"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/food_or_entertainment"
+            android:inputType="numberDecimal"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/education_fees_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="Education"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/education_fees"
+            android:inputType="numberDecimal"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/maintenance_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="maintenance"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/maintenance"
+            android:inputType="numberDecimal"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/household_expenses_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="houseHoldExpenses"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/household_expenses"
+            android:inputType="numberDecimal"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/other_expenses_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="otherExpenses"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/brand_mustard"
+            android:hint="@string/other_expenses"
+            android:inputType="numberDecimal"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/send_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/shape_two"
+            android:text="@string/send"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</ScrollView>

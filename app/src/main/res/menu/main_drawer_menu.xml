@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_finance"
+            android:title="@string/apply_for_vehicle_finance" />
+        <item
+            android:id="@+id/nav_customers"
+            android:title="@string/happy_customers" />
+        <item
+            android:id="@+id/nav_enquiries"
+            android:title="@string/information_about_us" />
+
+
+    </group>
+</menu>
